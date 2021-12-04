@@ -1,0 +1,106 @@
+:root {
+  --frame-width: 550px;
+  --frame-height: 300px;
+  --nav-height: 50px;
+  --header-color: white;
+  --btn-color: #1462a9;
+  --btn-text-color: white;
+  --frame-color: black;
+  --screen-color: black;
+  --circle-color: #1462a9;
+  font-family: calibri, arial, serif;
+}
+body {
+  background-color: black;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--header-color);
+  margin-bottom: 30px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--frame-width);
+  height: var(--frame-height);
+  background-color: var(--frame-color);
+  margin: 10px 10px 0px 10px;
+}
+.img {
+  width: var(--frame-width);
+  height: var(--frame-height);
+  background-color: var(--screen-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid white 1px;
+  border-radius: 12px;
+}
+.img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.side-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+}
+.img-nav {
+  width: var(--frame-width);
+  height: var(--nav-height);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-circle {
+  width: 5px;
+  height: 5px;
+  background-color: var(--circle-color);
+  border-radius: 50%;
+  border: solid white 1px;
+}
+.play-stop {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+.btn {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  width: 75px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  padding: 2px;
+}
+.btn:hover {
+  background-color: #3684cb;
+}
+.nav-circle:hover {
+  width: 20px;
+  height: 20px;
+}
